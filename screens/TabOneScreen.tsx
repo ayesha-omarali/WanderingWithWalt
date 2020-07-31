@@ -1,8 +1,7 @@
 import * as React from 'react';
 import { StyleSheet } from 'react-native';
-import Welcome from '../components/main/Welcome'
-
 import { View } from '../components/Themed';
+import Welcome from '../components/main/Welcome'
 
 export default function TabOneScreen() {
   return (
