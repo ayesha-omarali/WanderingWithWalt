@@ -2,7 +2,6 @@ import * as React from 'react';
 import { StyleSheet } from 'react-native';
 import { View } from '../components/Themed';
 import Welcome from '../components/main/Welcome'
-import title from '../assets/images/title.jpg';
 import {Image} from 'react-native' ;
 
 
