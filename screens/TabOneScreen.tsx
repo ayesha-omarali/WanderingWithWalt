@@ -4,6 +4,8 @@ import { View } from '../components/Themed';
 import Welcome from '../components/main/Welcome'
 import title from '../assets/images/title.jpg';
 import {Image} from 'react-native' ;
+
+
 export default function TabOneScreen() {
   return (
     <View style={styles.container}>

@@ -5,9 +5,9 @@ import * as React from 'react';
 
 import Colors from '../constants/Colors';
 import useColorScheme from '../hooks/useColorScheme';
-import TabOneScreen from '../screens/TabOneScreen';
-import TabTwoScreen from '../screens/TabTwoScreen';
-import { BottomTabParamList, TabOneParamList, TabTwoParamList } from '../types';
+import WelcomeScreen from '../screens/TabOneScreen';
+import DiscoveriesScreen from '../screens/TabTwoScreen';
+import { BottomTabParamList, WelcomeParamList as WelcomeParamList, DiscoveriesParamList } from '../types';
 
 const BottomTab = createBottomTabNavigator<BottomTabParamList>();
 
@@ -16,18 +16,18 @@ export default function BottomTabNavigator() {
 
   return (
     <BottomTab.Navigator
-      initialRouteName="TabOne"
+      initialRouteName="Welcome"
       tabBarOptions={{ activeTintColor: Colors[colorScheme].tint }}>
       <BottomTab.Screen
-        name="TabOne"
-        component={TabOneNavigator}
+        name="Welcome"
+        component={WelcomeNavigator}
         options={{
           tabBarIcon: ({ color }) => <TabBarIcon name="ios-code" color={color} />,
         }}
       />
       <BottomTab.Screen
-        name="TabTwo"
-        component={TabTwoNavigator}
+        name="Discoveries"
+        component={DiscoveriesNavigator}
         options={{
           tabBarIcon: ({ color }) => <TabBarIcon name="ios-code" color={color} />,
         }}
@@ -44,30 +44,30 @@ function TabBarIcon(props: { name: string; color: string }) {
 
 // Each tab has its own navigation stack, you can read more about this pattern here:
 // https://reactnavigation.org/docs/tab-based-navigation#a-stack-navigator-for-each-tab
-const TabOneStack = createStackNavigator<TabOneParamList>();
+const WelcomeesStack = createStackNavigator<WelcomeParamList>();
 
-function TabOneNavigator() {
+function WelcomeNavigator() {
   return (
-    <TabOneStack.Navigator>
-      <TabOneStack.Screen
-        name="TabOneScreen"
-        component={TabOneScreen}
-        options={{ headerTitle: 'Tab One Title' }}
+    <WelcomeesStack.Navigator>
+      <WelcomeesStack.Screen
+        name="WelcomeScreen"
+        component={WelcomeScreen}
+        options={{ headerTitle: `It's time to explore!` }}
       />
-    </TabOneStack.Navigator>
+    </WelcomeesStack.Navigator>
   );
 }
 
-const TabTwoStack = createStackNavigator<TabTwoParamList>();
+const DiscoveriesStack = createStackNavigator<DiscoveriesParamList>();
 
-function TabTwoNavigator() {
+function DiscoveriesNavigator() {
   return (
-    <TabTwoStack.Navigator>
-      <TabTwoStack.Screen
-        name="TabTwoScreen"
-        component={TabTwoScreen}
-        options={{ headerTitle: 'Tab Two Title' }}
+    <DiscoveriesStack.Navigator>
+      <DiscoveriesStack.Screen
+        name="DiscoveriesScreen"
+        component={DiscoveriesScreen}
+        options={{ headerTitle: 'Your Discoveries' }}
       />
-    </TabTwoStack.Navigator>
+    </DiscoveriesStack.Navigator>
   );
 }
