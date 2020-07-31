@@ -15,3 +15,7 @@ export type WelcomeParamList = {
 export type DiscoveriesParamList = {
   DiscoveriesScreen: undefined;
 };
+
+export type FoundEasterEggParamList = {
+  FoundEasterEggScreen: undefined;
+}

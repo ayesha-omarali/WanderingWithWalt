@@ -7,7 +7,7 @@ import Colors from '../constants/Colors';
 import useColorScheme from '../hooks/useColorScheme';
 import WelcomeScreen from '../screens/TabOneScreen';
 import DiscoveriesScreen from '../screens/TabTwoScreen';
-import { BottomTabParamList, WelcomeParamList as WelcomeParamList, DiscoveriesParamList } from '../types';
+import { BottomTabParamList, WelcomeParamList, DiscoveriesParamList } from '../types';
 
 const BottomTab = createBottomTabNavigator<BottomTabParamList>();
 
@@ -77,3 +77,6 @@ function DiscoveriesNavigator() {
     </DiscoveriesStack.Navigator>
   );
 }
+
+const FoundEasterEgg = createStackNavigator<FoundEasterEggParamList>();
+
