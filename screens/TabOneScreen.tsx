@@ -2,7 +2,7 @@ import * as React from 'react';
 import { StyleSheet } from 'react-native';
 import { View } from '../components/Themed';
 import Welcome from '../components/main/Welcome'
-import {Image} from 'react-native' ;
+import { Image } from 'react-native' ;
 import { Text } from '../Themed';
 
 export default function TabOneScreen() {
