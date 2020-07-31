@@ -3,13 +3,14 @@ import { StyleSheet } from 'react-native';
 import { View } from '../components/Themed';
 import Welcome from '../components/main/Welcome'
 import {Image} from 'react-native' ;
-
+import { Text } from '../Themed';
 
 export default function TabOneScreen() {
   return (
     <View style={styles.container}>
       {/* <Welcome /> */}
-      <Image style={{ width: 450, height: 575 }} source={require('../assets/images/title.jpg')}/>
+      <Image style={{ position: 'absolute', left: 10, top: 10, width: 200, height: 200 }} source={require('../assets/images/title-gold.png')}/>
+      <Image style={{ position: 'absolute', top: '40%', width: 170, height: 200 }} source={require('../assets/images/mickeynwalt-gold.png')}/>
     </View>
   );
 }
