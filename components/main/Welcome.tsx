@@ -1,8 +1,8 @@
 import * as React from 'react';
-import { Text } from '../components/Themed';
+import { Text } from '../Themed';
 
 export default function Welcome() {
   return (
-    <Text>Welcome Screen</Text>
+    <Text>Welcome</Text>
   )
 }
