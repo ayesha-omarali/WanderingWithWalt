@@ -9,7 +9,7 @@ const places = [];
 export default function TabOneScreen() {
   return (
     <View style={styles.container}>
-      <h1>Wandering with Walt</h1>
+      <Text>Hello World</Text>
     </View>
   );
 }

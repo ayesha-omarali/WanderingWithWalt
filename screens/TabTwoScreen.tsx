@@ -7,8 +7,8 @@ import { Text, View } from '../components/Themed';
 export default function TabTwoScreen() {
   return (
     <View style={styles.container}>
-      <h1>Map</h1>
-      <h1>List</h1>
+      <Text>Map</Text>
+      <Text>List</Text>
     </View>
   );
 }
