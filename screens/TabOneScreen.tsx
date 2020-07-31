@@ -9,8 +9,8 @@ export default function TabOneScreen() {
   return (
     <View style={styles.container}>
       {/* <Welcome /> */}
-      <Image style={{ position: 'absolute', left: 10, top: 10, width: 200, height: 200 }} source={require('../assets/images/title-gold.png')}/>
-      <Image style={{ position: 'absolute', top: '40%', width: 170, height: 200 }} source={require('../assets/images/mickeynwalt-gold.png')}/>
+      <Image style={{ position: 'absolute', left: 10, top: 30, width: 200, height: 200 }} source={require('../assets/images/title-gold.png')}/>
+      <Image style={{ position: 'absolute', top: '41%', width: 170, height: 200 }} source={require('../assets/images/mickeynwalt-gold.png')}/>
     </View>
   );
 }
