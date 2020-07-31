@@ -30,7 +30,7 @@ const dataArray = [
 {
   "type": "Location",
   content: "Look for the door of club 33 near New Orleans Square. This new entrance was only recently designated, after the 2014 expansion and remodel (the old entrance is right by the Blue Bayou restaurant entrance)",
-  title: "across from the La Mascarade d'Orleans shop",
+  title: "Across from the La Mascarade d'Orleans shop",
   "park": "New Orleans square",
   "lat-lon": "33.8111217,-117.92099309999999",
   "source": "https://www.disneyfoodblog.com/wp-content/uploads/2014/07/Door-Entryway.jpg"
@@ -43,15 +43,6 @@ const dataArray = [
   "park": "Adventureland",
   "lat-lon": "33.811299, -117.920540",
   "source": "https://www.google.com/url?sa=i&url=http%3A%2F%2Fwww.dolewhipaday.com%2F2019%2F08%2Funusual-interactive-spots-at-disneyland.html&psig=AOvVaw16JIP8EE76MmvQo5m3JVgA&ust=1596173602745000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCKCS7peg9OoCFQAAAAAdAAAAABAJ"
-},
-{
-  "A list of Hidden Mickeys, location-based trivia, and other fun sites throughout Disneyland.": "Indiana Jones Pole",
-  "type": "Ride tidbit",
-  content: "In the queue for indiana jones you can see a bamboo pole that says \"Danger! Do not touch pole!\"....tug it! ",
-  title: "Indiana Jones Adventure",
-  "park": "Adventureland",
-  "lat-lon": "33.811299, -117.920540",
-  "source": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.mouseplanet.com%2F12586%2FHappy_Birthday_Dr_Jones&psig=AOvVaw1gpHUFgsrbJwltGA7MueAH&ust=1596173526673000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCIj86fKf9OoCFQAAAAAdAAAAABAc"
 },
 {
   "A list of Hidden Mickeys, location-based trivia, and other fun sites throughout Disneyland.": "Walt and Roy Disney Initials",
@@ -97,15 +88,6 @@ const dataArray = [
   "park": "New Orleans Square",
   "lat-lon": "33.811237, -117.920816",
   "source": ""
-},
-{
-  "A list of Hidden Mickeys, location-based trivia, and other fun sites throughout Disneyland.": "Mark Twain Riverboat",
-  "type": "Ride tidbit",
-  content: "If you ask the ship captain in time, you may get to go up to the wheelhouse of the Mark Twain, where you get to \"steer\" it! You get to sign the guestbook and receive a pilot's certificate!",
-  title: "Mark Twain Riverboat",
-  "park": "Frontierland",
-  "lat-lon": "33.812291, -117.920551",
-  "source": "https://upload.wikimedia.org/wikipedia/commons/f/f9/MarkTwainRiverboat50th_DL.jpg"
 },
 {
   "A list of Hidden Mickeys, location-based trivia, and other fun sites throughout Disneyland.": "Adventureland Little Treehouse",
