@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import { Text } from '../Themed';
 import { Container, Header, Content, Accordion } from "native-base";
+import { YellowBox } from 'react-native'
 
 const dataArray = [
   {
@@ -172,21 +173,25 @@ const dataArray = [
 }
 ];
 
-export default class AccordionExample extends Component {
-  render() {
-    return (
-      <Container>
-        <Header />
-        <Content padder>
-          <Accordion dataArray={dataArray} expanded={0}/>
-        </Content>
-      </Container>
-    );
-  }
-}
-
 export default function EasterEgg() {
   return (
-    <Text>Easter Egg</Text>
-  )
+    <Container>
+      <Header />
+      <Content padder>
+        <Accordion dataArray={dataArray} expanded={0}/>
+      </Content>
+    </Container>
+  );
 }
+
+// export default function EasterEgg() {
+//   return (
+//     <Text>Easter Egg</Text>
+//   )
+// }
+
+
+//suppress warning so we don't look bad during the demo...
+YellowBox.ignoreWarnings([
+  'VirtualizedLists should never be nested', // TODO: Remove when fixed
+])

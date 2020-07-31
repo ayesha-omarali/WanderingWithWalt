@@ -1,8 +1,8 @@
 import * as React from 'react';
-import { Text } from '../Themed';
+import { Text, View } from '../Themed';
 
 export default function ParkMap() {
   return (
-    <Text>Park Map</Text>
+    <View></View>
   )
 }

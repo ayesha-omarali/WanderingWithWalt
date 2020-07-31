@@ -18,5 +18,8 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
+    margin: 15
   },
+
+  // TODO: Add padding around map/accordion to look like Cards
 });
