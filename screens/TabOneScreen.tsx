@@ -9,8 +9,8 @@ export default function TabOneScreen() {
   return (
     <View style={styles.container}>
       {/* <Welcome /> */}
-      <Image style={{ position: 'absolute', left: 10, top: 30, width: 200, height: 200 }} source={require('../assets/images/title-gold.png')}/>
-      <Image style={{ position: 'absolute', top: '41%', width: 170, height: 200 }} source={require('../assets/images/mickeynwalt-gold.png')}/>
+      <Image style={styles.title} source={require('../assets/images/title-gold.png')}/>
+      <Image style={styles.walt} source={require('../assets/images/mickeynwalt-gold.png')}/>
     </View>
   );
 }
@@ -27,4 +27,19 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     backgroundColor: '#0c2b5c'
   },
+  title: {
+    position: 'absolute',
+    // verticalAlign: 'middle',
+    left: 10,
+    top: 30,
+    width: 200,
+    height: 200
+  },
+  walt: {
+    position: 'absolute',
+    top: '41%',
+    width: 170,
+    height: 200
+  }
+
 });
