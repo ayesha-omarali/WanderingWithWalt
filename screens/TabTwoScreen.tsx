@@ -1,14 +1,15 @@
 import * as React from 'react';
 import { StyleSheet } from 'react-native';
+import ParkMap from './ParkMap'
+import Attractions from './Attractions'
 
-import EditScreenInfo from '../components/EditScreenInfo';
-import { Text, View } from '../components/Themed';
+import { View } from '../components/Themed';
 
 export default function TabTwoScreen() {
   return (
     <View style={styles.container}>
-      <Text>Map</Text>
-      <Text>List</Text>
+      <ParkMap />
+      <Attractions />
     </View>
   );
 }
