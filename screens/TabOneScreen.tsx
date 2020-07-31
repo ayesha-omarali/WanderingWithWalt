@@ -9,7 +9,7 @@ import {Image} from 'react-native' ;
 export default function TabOneScreen() {
   return (
     <View style={styles.container}>
-      <Welcome />
+      {/* <Welcome /> */}
       <Image style={{ width: 450, height: 575 }} source={require('../assets/images/title.jpg')}/>
     </View>
   );
@@ -25,5 +25,6 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
+    backgroundColor: '#0c2b5c'
   },
 });

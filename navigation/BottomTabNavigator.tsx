@@ -1,4 +1,4 @@
-import { Ionicons } from '@expo/vector-icons';
+import { AntDesign, MaterialCommunityIcons } from '@expo/vector-icons';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createStackNavigator } from '@react-navigation/stack';
 import * as React from 'react';
@@ -22,14 +22,14 @@ export default function BottomTabNavigator() {
         name="Welcome"
         component={WelcomeNavigator}
         options={{
-          tabBarIcon: ({ color }) => <TabBarIcon name="ios-code" color={color} />,
+          tabBarIcon: ({ color }) => <WelcomeIcon name="smileo" color={color} />,
         }}
       />
       <BottomTab.Screen
         name="Discoveries"
         component={DiscoveriesNavigator}
         options={{
-          tabBarIcon: ({ color }) => <TabBarIcon name="ios-code" color={color} />,
+          tabBarIcon: ({ color }) => <DiscoveriesIcon name="ship-wheel" color={color} />,
         }}
       />
     </BottomTab.Navigator>
@@ -38,8 +38,12 @@ export default function BottomTabNavigator() {
 
 // You can explore the built-in icon families and icons on the web at:
 // https://icons.expo.fyi/
-function TabBarIcon(props: { name: string; color: string }) {
-  return <Ionicons size={30} style={{ marginBottom: -3 }} {...props} />;
+function DiscoveriesIcon(props: { name: string; color: string }) {
+  return <MaterialCommunityIcons size={30} style={{ marginBottom: -3 }} {...props} />;
+}
+
+function WelcomeIcon(props: { name: string; color: string }) {
+  return <AntDesign size={25} style={{ marginBottom: -3 }} {...props} />;
 }
 
 // Each tab has its own navigation stack, you can read more about this pattern here:
@@ -48,11 +52,13 @@ const WelcomeesStack = createStackNavigator<WelcomeParamList>();
 
 function WelcomeNavigator() {
   return (
-    <WelcomeesStack.Navigator>
+    <WelcomeesStack.Navigator   screenOptions={{
+    headerShown: false
+  }}>
       <WelcomeesStack.Screen
         name="WelcomeScreen"
         component={WelcomeScreen}
-        options={{ headerTitle: `It's time to explore!` }}
+        // options={{ headerTitle: `It's time to explore!` }}
       />
     </WelcomeesStack.Navigator>
   );
