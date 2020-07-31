@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { StyleSheet } from 'react-native';
-import ParkMap from './ParkMap'
-import Attractions from './Attractions'
+import ParkMap from '../components/custom/ParkMap'
+import Attractions from '../components/custom/Attractions'
 
 import { View } from '../components/Themed';
 

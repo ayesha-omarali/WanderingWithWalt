@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { StyleSheet } from 'react-native';
-import Welcome from './Welcome'
+import Welcome from '../components/custom/Welcome'
 
 import { View } from '../components/Themed';
 
